@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="JSproject1.css">
+    <title>JS Project 1</title>
+
+
+</head>
+<body>
+    <div class="Wrapper">
+        <div><h1>Profit or Loss?</h1></div>
+
+        <div>
+        <form>
+            <div class="innerform">
+                <div class="inputs">
+                    <div>
+                        <label for="cost" class="sr-only">Enter the cost price</label>
+                        <input class="" type="text" id="cost" placeholder="Enter the cost price"  pattern="^[0-9]*$"  title="Add numbers only"></input>
+                    </div>
+                    <div>
+                        <label for="sell" class="sr-only">Enter the selling price</label>
+                        <input class="" type="text" id="sell" placeholder="Enter the selling price"  pattern="^[0-9]*$" title="Add numbers only"></input>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btnSubmit" type="submit">Submit</button>
+                    <button class="btnClear" type="reset" onclick="reset">Clear</button>
+                </div>
+            </div>
+        </form>  
+        </div>
+
+
+        <div id="out"><p id="output"></p></div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JSproject1.js"></script>
+</body>
+</html>
